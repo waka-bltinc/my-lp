@@ -5,7 +5,7 @@
 
 /* general tags */
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: #282828;
     color: var(--original-white);
 
     font-family: "Inter", sans-serif;
@@ -120,7 +120,7 @@ img {
     line-height: 9rem;
     vertical-align: bottom;
     transform: translateX(-2rem);
-    opacity: .15;
+    color: #282828;
 }
 
 #main {
