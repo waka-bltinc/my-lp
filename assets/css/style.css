@@ -71,8 +71,15 @@ img {
 }
 
 .arrow__image {
-    transform: translateY(5rem);
     width: 2rem;
+}
+
+.arrow__image--translateY5 {
+    transform: translateY(5rem);
+}
+
+.arrow__image--translateY10 {
+    transform: translateY(10rem);
 }
 
 /* text-yellow */
@@ -267,6 +274,12 @@ img {
 }
 
 /* target section */
+#target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .target__main {
     margin: auto;
     padding-inline: 10rem;
