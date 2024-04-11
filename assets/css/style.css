@@ -187,13 +187,15 @@ img {
 
 .favorite__main {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
 }
 
 .favorite__row--container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 4.5rem;
 }
 
 .favorite__images-container {
