@@ -63,7 +63,7 @@ img {
 }
 
 .arrow__image {
-    transform: translateY(-5rem);
+    transform: translateY(5rem);
     width: 2rem;
 }
 
@@ -118,8 +118,13 @@ img {
 /* details section */
 #details {
     display: flex;
-    gap: 4rem;
+    flex-direction: column;
     align-items: center;
+}
+
+.details__main {
+    display: flex;
+    gap: 4rem;
 }
 
 .details__image-container {
@@ -129,6 +134,7 @@ img {
 .details__text-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4rem;
     width: 60%;
 }
