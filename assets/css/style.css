@@ -192,7 +192,7 @@ img {
     gap: 4.5rem;
 }
 
-.favorite__row--container {
+.favorite__row-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
