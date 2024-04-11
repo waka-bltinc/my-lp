@@ -47,6 +47,10 @@ img {
     max-width: 1080px;
 }
 
+.max-w-960 {
+    max-width: 960px;
+}
+
 /* shadow */
 .header-text__shadow--white-lg {
     text-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
@@ -58,7 +62,6 @@ img {
 
 /* arrow */
 .arrow__container {
-    margin-top: -8rem;
     margin-inline: auto;
 }
 
@@ -143,7 +146,6 @@ img {
     font-size: 3.5rem;
     line-height: 3.3rem;
     border-bottom: 2px solid #f2f2f2;
-    flex-grow: 1;
 }
 
 .details__text--name-en {
@@ -157,4 +159,44 @@ img {
 
 .details__text--motto {
     font-size: 2rem;
+}
+
+/* section general */
+.section__header-container {
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.section-header__text {
+    font-size: 5rem;
+}
+
+.favorite__main {
+    margin: auto;
+}
+
+.favorite__row--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4.5rem;
+}
+
+.favorite__images-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* favorite section */
+.favorite__image {
+    width: 50%;
+}
+
+.favorite__text {
+    margin: auto;
+    text-align: center;
 }
