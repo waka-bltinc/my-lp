@@ -1,6 +1,6 @@
 :root {
     --original-white: #f2f2f2;
-    --original-emphasis: #E7EF91;
+    --original-yellow: #E7EF91;
 }
 
 /* general tags */
@@ -75,14 +75,18 @@ img {
     width: 2rem;
 }
 
-/* text-emphasis */
-.description__text--emphasis {
+/* text-yellow */
+.description__text--yellow {
     font-size: 1.5rem;
-    color: var(--original-emphasis);
+    color: var(--original-yellow);
 }
 
 .description__text--sm {
     font-size: 0.8rem;
+}
+
+.description__text--md {
+    font-size: 1.5rem;
 }
 
 /* header */
@@ -259,4 +263,26 @@ img {
 
 .products__text--name {
     font-size: 1.5rem;
+}
+
+/* target section */
+.target__main {
+    margin: auto;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.target__text-container {
+    text-align: center;
+}
+
+.target__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.target__title--yellow {
+    font-size: 3rem;
 }
