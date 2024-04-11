@@ -13,7 +13,7 @@ body {
 main {
     background-color: black;
     display: flex;
-    margin: auto;
+    margin-inline: auto;
     justify-content: center;
     position: relative;
 }
@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     gap: 3.5rem;
-    margin: auto;
+    margin-inline: auto;
     width: 100%;
     background-color: black;
     padding: 1.5% 4%;
@@ -47,12 +47,24 @@ img {
     max-width: 1080px;
 }
 
+/* shadow */
 .header-text__shadow--white-lg {
     text-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
 }
 
 .content__shadow-white--lg {
     box-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
+}
+
+/* arrow */
+.arrow__container {
+    margin-top: -8rem;
+    margin-inline: auto;
+}
+
+.arrow__image {
+    transform: translateY(-5rem);
+    width: 2rem;
 }
 
 /* header */
@@ -71,7 +83,6 @@ img {
     flex-grow: 1 !important;
     background-color: #f2f2f2;
 }
-
 
 /* main content */
 /* side */
@@ -100,9 +111,44 @@ img {
 
 #main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* details section */
+#details {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
 .details__image-container {
-    width: 30%;
+    width: 40%;
+}
+
+.details__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 60%;
+}
+
+.details__text--name {
+    font-size: 3.5rem;
+    line-height: 3.3rem;
+    border-bottom: 2px solid #f2f2f2;
+    flex-grow: 1;
+}
+
+.details__text--name-en {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+
+.details__text--description {
+    line-height: 2rem;
+}
+
+.details__text--motto {
+    font-size: 2rem;
 }
