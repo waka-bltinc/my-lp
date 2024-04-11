@@ -20,6 +20,10 @@ main {
     display: flex;
     margin-inline: auto;
     justify-content: center;
+    flex-direction: column;
+}
+
+#content__black {
     position: relative;
 }
 
@@ -34,9 +38,22 @@ header {
     flex-grow: 1;
 }
 
-section {
+footer {
+    text-align: center;
+    color: var(--original-white);
+    background-color: black;
+    margin-inline: auto;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+section:not(:last-child) {
     /* 400px */
     margin-bottom: 25rem;
+}
+
+section:last-child {
+    margin-bottom: 2rem;
 }
 
 img {
@@ -61,8 +78,16 @@ img {
     text-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
 }
 
+.header-text__shadow--black-lg {
+    text-shadow: rgba(0, 0, 0, 0.25) 0.5rem 0.5rem 0.25rem;
+}
+
 .content__shadow-white--lg {
     box-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
+}
+
+.content__shadow-black--lg {
+    box-shadow: rgba(0, 0, 0, 0.25) 0.5rem 0.5rem 0.25rem;
 }
 
 /* arrow */
@@ -106,11 +131,18 @@ img {
     font-weight: 900;
 }
 
-.header__line--horizontal {
+.header-line__horizontal {
     height: 4px;
     width: 100%;
     flex-grow: 1 !important;
+}
+
+.header-line__horizontal--white {
     background-color: var(--original-white);
+}
+
+.header-line__horizontal--black {
+    background-color: black;
 }
 
 /* main content */
@@ -143,6 +175,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-inline: auto;
 }
 
 /* details section */
@@ -277,7 +310,6 @@ img {
 #target {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .target__main {
@@ -299,4 +331,70 @@ img {
 
 .target__title--yellow {
     font-size: 3rem;
+}
+
+#content__white {
+    width: 100%;
+    background-color: var(--original-white);
+    color: black;
+}
+
+/* decision */
+#last {
+    display: block;
+    margin: auto;
+}
+
+#decision {
+    min-height: 100vh;
+}
+
+.decision__main {
+    width: 100%;
+    margin: auto;
+}
+
+.decision__inrroduction-text-container {
+    margin-inline: auto;
+    max-width: 60%;
+}
+
+.decision__introduction-text {
+    font-size: 2rem;
+}
+
+.decision__introduction-text--right {
+    text-align: end;
+}
+
+.decision__image-container {
+    width: 50%;
+    margin-inline: auto;
+}
+
+.decision__bullet-logo {
+    text-align: center;
+}
+
+.decision__text-container {
+    background-color: black;
+    color: var(--original-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+.decision__text--md {
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+
+.decision__text--lg {
+    font-size: 3.5rem;
+}
+
+.decision__name {
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 2rem;
+    font-weight: 800;
 }
