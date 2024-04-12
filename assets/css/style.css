@@ -70,6 +70,10 @@ img {
     max-width: 960px;
 }
 
+.lg-hidden {
+    display: none;
+}
+
 /* shadow */
 .header-text__shadow--white-lg {
     text-shadow: rgba(255, 255, 255, 0.25) 0.5rem 0.5rem 0.25rem;
@@ -421,18 +425,55 @@ img {
         font-size: 14px;
     }
 
+
+    /* general classes */
+    .lg-hidden {
+        display: block;
+    }
+
+    /* section general */
+    .section__header-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header__text {
+        font-size: 3rem;
+        line-height: 3.3rem;
+    }
+
     #main {
         padding: 3%;
+        width: 70%;
     }
 
     .header-line__horizontal {
         display: none;
     }
 
+    /* header */
+    header {
+        padding: 3rem;
+    }
+
+    .header__main-text {
+        font-size: 4.5rem;
+        line-height: 4rem;
+    }
+
     /* details section */
     .details__main {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
+    }
+
+    .details__image-container {
+        width: 100%;
+    }
+
+    .details__text-container {
+        width: 100%;
+        gap: 1.5rem;
     }
 
     /* products section */
@@ -440,3 +481,5 @@ img {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 375px) {}
