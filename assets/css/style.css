@@ -480,6 +480,16 @@ img {
     .products__row-container {
         flex-direction: column;
     }
+
+    .products__image-container,
+    .products__text-container {
+        width: 100%;
+    }
+
+    /* target section */
+    .target__main {
+        padding-inline: 0;
+    }
 }
 
 @media screen and (max-width: 375px) {}
