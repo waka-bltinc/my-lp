@@ -517,6 +517,10 @@ img {
         padding-inline: 3%;
     }
 
+    section {
+        margin-bottom: 14rem;
+    }
+
     .header__main {
         width: 90%;
     }
