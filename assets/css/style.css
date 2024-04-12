@@ -108,7 +108,7 @@ img {
     width: 2rem;
 }
 
-.arrow__image--translateY5 {
+.arrow__image--translate {
     transform: translateY(5rem);
 }
 
@@ -437,6 +437,20 @@ img {
     /* general classes */
     .lg-hidden {
         display: block;
+    }
+
+    .arrow__container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .arrow__image {
+        height: clamp(3rem, 40vh, 10rem);
+    }
+
+    .arrow__image--translate {
+        transform: translateY(-3rem);
     }
 
     /* section general */
