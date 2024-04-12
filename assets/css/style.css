@@ -476,6 +476,21 @@ img {
         gap: 1.5rem;
     }
 
+    .details__text--name {
+        font-size: clamp(2rem, 7vw, 5rem);
+        line-height: clamp(2rem, 6vw, 5rem);
+    }
+
+    .details__text--name-en {
+        font-size: clamp(1.5rem, 2vw, 3rem);
+        line-height: clamp(1.5rem, 3vw, 3rem);
+        margin-left: 1rem;
+    }
+
+    .details__text--motto {
+        font-size: 1.5rem;
+    }
+
     /* favorite section */
     .favorite__row-container {
         gap: 1rem;
@@ -547,12 +562,13 @@ img {
 
     /* details section */
     .details__text--name {
-        line-height: 2rem;
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 7vw, 5rem);
+        line-height: clamp(2rem, 6vw, 5rem);
     }
 
     .details__text--name-en {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 2vw, 3rem);
+        line-height: clamp(1.5rem, 3vw, 3rem);
         margin-left: 1rem;
     }
 }
