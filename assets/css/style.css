@@ -47,13 +47,9 @@ footer {
     font-size: 1rem;
 }
 
-section:not(:last-child) {
+section {
     /* 400px */
     margin-bottom: 25rem;
-}
-
-section:last-child {
-    margin-bottom: 2rem;
 }
 
 img {
@@ -342,11 +338,12 @@ img {
 /* decision */
 #last {
     display: block;
-    margin: auto;
+    margin-inline: auto;
 }
 
 #decision {
-    min-height: 100vh;
+    margin-top: 100vh;
+    margin-bottom: 3rem;
 }
 
 .decision__main {
