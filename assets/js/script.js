@@ -18,3 +18,28 @@ document.addEventListener("scroll", function () {
         contentElement.style.backgroundColor = 'black';
     }
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+    // すべての.section__header-container要素を選択
+    const headerContainers = document.querySelectorAll('.section__header-container');
+
+    // Intersection Observerのコールバック
+    const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+            // 対応する.section-header__text要素を取得
+            const headerText = entry.target.querySelector('.section-header__text');
+
+            if (entry.isIntersecting) {
+                headerText.classList.add('animate__animated', 'animate__fadeInLeft');
+            }
+        });
+    };
+
+    // Intersection Observerの設定
+    const observer = new IntersectionObserver(observerCallback);
+
+    // それぞれの.section__header-container要素に対してオブザーバーを設定
+    headerContainers.forEach(container => {
+        observer.observe(container);
+    });
+});
