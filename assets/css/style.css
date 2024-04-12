@@ -494,7 +494,16 @@ img {
 }
 
 @media screen and (max-width: 375px) {
-    #main {
+    header {
+        padding-inline: 3%;
+    }
+
+    .header__main {
         width: 90%;
+    }
+
+    #main {
+        width: 100%;
+        padding-inline: 0;
     }
 }
