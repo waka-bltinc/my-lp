@@ -39,11 +39,18 @@
           <section id="details">
             <div class="details__main">
               <div class="details__image-container">
-                <img
-                  class="details__item-image"
-                  src="./assets/image/profile-image.jpg"
-                  alt="若月翔"
-                />
+                <picture>
+                  <source
+                    srcset="./assets/image/profile-image-sp.jpg"
+                    media="(max-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="details__item-image"
+                    src="./assets/image/profile-image.jpg"
+                    alt="若月翔"
+                  />
+                </picture>
               </div>
               <div class="details__text-container">
                 <h2 class="details__text--name">

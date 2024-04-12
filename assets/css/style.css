@@ -443,7 +443,7 @@ img {
 
     #main {
         padding: 3%;
-        width: 70%;
+        width: 80%;
     }
 
     .header-line__horizontal {
@@ -464,7 +464,7 @@ img {
     .details__main {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .details__image-container {
@@ -479,6 +479,7 @@ img {
     /* products section */
     .products__row-container {
         flex-direction: column;
+        gap: 1.5rem;
     }
 
     .products__image-container,
@@ -492,4 +493,8 @@ img {
     }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    #main {
+        width: 90%;
+    }
+}
