@@ -1,0 +1,21 @@
+.arrow-animation {
+    animation: animateArrow 2s infinite;
+}
+
+@keyframes animateArrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
