@@ -6,8 +6,6 @@ const changeBackgroundColorOnScroll = () => {
     const mainElement = document.getElementById("content__black");
     const mainBottom = mainElement.offsetTop + mainElement.offsetHeight;
 
-    console.log(mainBottom);
-
     // スクロール位置がmain要素の真ん中あたりに来たら背景色を変更
     if (window.scrollY > mainBottom - window.innerHeight / 2) {
         // 時間経過で徐々にcontent__whiteのの背景色を白くする

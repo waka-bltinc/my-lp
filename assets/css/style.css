@@ -123,6 +123,7 @@ img {
 .description__text--yellow {
     font-size: 1.5rem;
     color: var(--original-yellow);
+    font-weight: bold;
 }
 
 .description__text--sm {
@@ -131,6 +132,7 @@ img {
 
 .description__text--md {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* header */
@@ -473,6 +475,10 @@ img {
     .arrow__image--translate {
         position: absolute;
         transform: translate(-2rem, 0rem);
+    }
+
+    .description__text--md {
+        line-height: 1rem;
     }
 
     /* section general */
