@@ -471,7 +471,8 @@ img {
     }
 
     .arrow__image--translate {
-        transform: translateY(0rem);
+        position: absolute;
+        transform: translate(-2rem, 0rem);
     }
 
     /* section general */
