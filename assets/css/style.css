@@ -169,6 +169,7 @@ img {
 }
 
 .side__text--lg {
+    text-wrap: nowrap;
     writing-mode: vertical-lr;
     /* 180px */
     font-size: 11.25rem;
@@ -559,6 +560,10 @@ img {
     }
 
     /* decision section */
+    #decision {
+        margin-top: 50vh;
+    }
+
     .decision__inrroduction-text-container {
         width: 100%;
         max-width: 100%;
@@ -594,7 +599,7 @@ img {
     }
 
     section {
-        margin-bottom: 14rem;
+        margin-bottom: 7rem;
     }
 
     .header__main {

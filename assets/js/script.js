@@ -7,10 +7,10 @@ const changeBackgroundColorOnScroll = () => {
     const mainBottom = mainElement.offsetTop + mainElement.offsetHeight;
 
     if (window.scrollY > mainBottom) {
-        const scrollAmount = window.scrollY - mainBottom;
-        let colorValue = Math.min(242, scrollAmount);
-        colorValue = Math.floor(colorValue);
-        contentElement.style.backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
+        // 時間経過で徐々にcontent__whiteのの背景色を白くする
+        contentElement.style.backgroundColor = 'white';
+        contentElement.style.transition = 'background-color 1s';
+
     } else {
         contentElement.style.backgroundColor = 'black';
     }
