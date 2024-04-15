@@ -292,6 +292,20 @@ img {
     align-items: center;
 }
 
+.personality__text-header-contaienr {
+    text-align: center;
+}
+
+.personality__text--lg {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.personality__text--sub {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
 .personality__text {
     text-align: center;
 }
@@ -365,7 +379,7 @@ img {
 }
 
 #decision {
-    margin-top: 30vh;
+    margin-top: 15vh;
     margin-bottom: 3rem;
 }
 
@@ -435,6 +449,10 @@ img {
 @media screen and (max-width: 768px) {
     html {
         font-size: 14px;
+    }
+
+    section {
+        margin-bottom: 10rem;
     }
 
     /* general classes */
@@ -543,12 +561,15 @@ img {
         gap: 1rem;
     }
 
+    .personality__text--lg {
+        font-size: 2rem;
+    }
+
     /* products section */
     .products__row-container {
         flex-direction: column;
         gap: 1rem;
     }
-
 
     .products__image-container,
     .products__text-container {
