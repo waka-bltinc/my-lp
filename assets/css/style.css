@@ -326,6 +326,10 @@ img {
     gap: 3.5rem;
 }
 
+.products__row-container:last-child {
+    flex-direction: row-reverse;
+}
+
 .products__image-container {
     width: 50%;
 }
@@ -573,7 +577,8 @@ img {
     }
 
     /* products section */
-    .products__row-container {
+    .products__row-container,
+    .products__row-container:last-child {
         flex-direction: column;
         gap: 1rem;
     }
