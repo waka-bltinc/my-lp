@@ -469,8 +469,7 @@ img {
 
     /* header */
     header {
-        /* padding: 3rem; */
-        padding-block: 4%;
+        padding-block: 8%;
     }
 
     .header__main-text {
