@@ -341,7 +341,7 @@ img {
     gap: 1.5rem;
 }
 
-.products__text--name {
+.products__text-name {
     font-size: 1.5rem;
 }
 
@@ -432,7 +432,7 @@ img {
     font-size: 3.5rem;
 }
 
-.decision__name {
+.decision__text-name {
     text-align: center;
     padding: 0.7rem;
     font-size: 2rem;
@@ -677,7 +677,7 @@ img {
         font-size: 1.5rem;
     }
 
-    .decision__name {
+    .decision__text-name {
         font-size: 1rem;
     }
 }
