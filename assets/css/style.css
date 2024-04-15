@@ -39,7 +39,7 @@ header {
     margin-inline: auto;
     width: 100%;
     background-color: black;
-    padding: 1.5% 4%;
+    padding: 1.5% 3%;
     flex-grow: 1;
 }
 
@@ -463,18 +463,14 @@ img {
         line-height: clamp(2rem, 9vw, 5rem);
     }
 
-    #main {
-        padding-inline: 3%;
-        width: 80%;
-    }
-
     .header-line__horizontal {
         display: none;
     }
 
     /* header */
     header {
-        padding: 3rem;
+        /* padding: 3rem; */
+        padding-block: 4%;
     }
 
     .header__main-text {
