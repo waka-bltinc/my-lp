@@ -57,8 +57,7 @@ footer {
 }
 
 section {
-    /* 400px */
-    margin-bottom: 25rem;
+    margin-bottom: 15rem;
 }
 
 img {
@@ -280,7 +279,7 @@ img {
 
 .favorite__text {
     margin: auto;
-    text-align: center;
+    width: 70%;
 }
 
 /* personality section */
@@ -536,6 +535,10 @@ img {
         transform: translateY(4rem)
     }
 
+    .favorite__text {
+        width: 70%;
+    }
+
     /* personality section */
     .personality__main {
         gap: 1rem;
@@ -591,6 +594,12 @@ img {
         font-size: 2rem;
     }
 
+}
+
+@media screen and (max-width: 425px) {
+    .favorite__text {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 375px) {
