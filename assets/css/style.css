@@ -3,6 +3,10 @@
     --original-yellow: #E7EF91;
 }
 
+html {
+    font-size: 18px;
+}
+
 /* general tags */
 body {
     background-color: #282828;
