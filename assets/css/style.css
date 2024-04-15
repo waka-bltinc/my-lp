@@ -451,7 +451,7 @@ img {
     }
 
     .arrow__image--translate {
-        transform: translateY(-3rem);
+        transform: translateY(0rem);
     }
 
     /* section general */
