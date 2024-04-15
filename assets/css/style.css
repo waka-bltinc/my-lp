@@ -365,7 +365,7 @@ img {
 }
 
 #decision {
-    margin-top: 70vh;
+    margin-top: 30vh;
     margin-bottom: 3rem;
 }
 
@@ -567,10 +567,6 @@ img {
     }
 
     /* decision section */
-    #decision {
-        margin-top: 50vh;
-    }
-
     .decision__inrroduction-text-container {
         width: 100%;
         max-width: 100%;
