@@ -82,6 +82,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // 性格の画像のアニメーション
     animateOnIntersection('.personality__image-container', '.personality__image-container', 'animate__animated animate__zoomIn');
-
-    photoZoomOnHover();
 });
