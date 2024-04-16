@@ -253,7 +253,7 @@ img {
 }
 
 .section-header__text {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 /* favorite section */
@@ -448,7 +448,7 @@ img {
 }
 
 .decision__introduction-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .decision__introduction-text--right {
@@ -459,6 +459,7 @@ img {
     width: 50%;
     height: 40%;
     margin-inline: auto;
+    flex-grow: 1;
 }
 
 .decision__bullet-logo {
@@ -471,15 +472,18 @@ img {
     text-align: center;
     padding: 1rem;
     height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .decision__text--md {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 5rem;
 }
 
 .decision__text--lg {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .decision__text-name {
@@ -659,9 +663,17 @@ img {
     }
 
     /* decision section */
+    .decision__main {
+        display: flex;
+        flex-direction: column;
+    }
+
     .decision__inrroduction-text-container {
         width: 100%;
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .decision__introduction-text {
@@ -670,7 +682,11 @@ img {
     }
 
     .decision__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0.5rem;
+        height: 15%;
     }
 
     .decision__text--md {
@@ -682,6 +698,10 @@ img {
         font-size: 2rem;
     }
 
+    .decision__image-container {
+        width: 100%;
+        height: 30%;
+    }
 }
 
 @media screen and (max-width: 425px) {
