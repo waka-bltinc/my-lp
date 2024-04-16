@@ -18,6 +18,26 @@ const changeBackgroundColorOnScroll = () => {
 }
 
 /**
+ * 要素が画面に入ったタイミングでフェードインさせる
+ */
+const animateSectionheaderOnIntersection = () => {
+    const headerContainers = document.querySelectorAll('.section__header-container');
+    const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+            const headerText = entry.target.querySelector('.section-header__text');
+            if (entry.isIntersecting) {
+                headerText.classList.add('animate__animated', 'animate__fadeInLeft');
+            }
+        });
+    };
+    const observer = new IntersectionObserver(observerCallback);
+    headerContainers.forEach(container => {
+        observer.observe(container);
+    });
+}
+
+
+/**
  * 画面に入った要素に対して一度だけアニメーションを適用する
  * @param {string} triggerSelector - IntersectionObserver で監視する要素のセレクタ
  * @param {string} targetSelector - アニメーションを適用する対象要素のセレクタ
@@ -72,8 +92,19 @@ const photoZoomOnHover = () => {
 
 window.addEventListener("scroll", changeBackgroundColorOnScroll);
 window.addEventListener("DOMContentLoaded", () => {
-    animateOnIntersection('.section__header-container', '.section-header__text', 'animate__animated animate__fadeInLeft');
+    // セクションヘッダーのアニメーション
+    animateSectionheaderOnIntersection();
+
+    // ラーメンの画像のアニメーション
     animateOnIntersection('.favorite__images-container--interactive', '.favorite__image--interactive:nth-child(even)', 'animate__animated animate__fadeInUp');
     animateOnIntersection('.favorite__images-container--interactive', '.favorite__image--interactive:nth-child(odd)', 'animate__animated animate__fadeInDown');
+
+    // ゆるふわの画像のアニメーション
+    animateOnIntersection('.favorite__image', '.favorite__image:first-child', 'animate__animated animate__fadeInLeft');
+    animateOnIntersection('.favorite__image', '.favorite__image:last-child', 'animate__animated animate__fadeInRight');
+
+    // 性格の画像のアニメーション
+    animateOnIntersection('.personality__image-container', '.personality__image-container', 'animate__animated animate__zoomIn animate__fast');
+
     photoZoomOnHover();
 });
