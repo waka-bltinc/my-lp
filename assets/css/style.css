@@ -604,19 +604,6 @@ img {
         gap: 1rem;
     }
 
-    .favorite__image:first-child {
-        z-index: 1;
-        transform-origin: top left;
-        transform: scale(1.1);
-    }
-
-    .favorite__image:last-child {
-        z-index: -1;
-        transform-origin: top right;
-        transform: scale(1.1);
-        transform: translateY(4rem)
-    }
-
     .favorite__image--zoom img {
         max-width: 80%;
         margin-inline: auto;
