@@ -18,23 +18,34 @@ const changeBackgroundColorOnScroll = () => {
 }
 
 /**
- * 要素が画面に入ったタイミングでフェードインさせる
+ * 画面に入った要素に対して一度だけアニメーションを適用する
+ * @param {string} triggerSelector - IntersectionObserver で監視する要素のセレクタ
+ * @param {string} targetSelector - アニメーションを適用する対象要素のセレクタ
+ * @param {string} animationClasses - 適用するアニメーションのクラス名
  */
-const animateTextOnIntersection = () => {
-    const headerContainers = document.querySelectorAll('.section__header-container');
-    const observerCallback = (entries, observer) => {
-        entries.forEach((entry) => {
-            const headerText = entry.target.querySelector('.section-header__text');
+const animateOnIntersection = (triggerSelector, targetSelector, animationClasses) => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-                headerText.classList.add('animate__animated', 'animate__fadeInLeft');
+                document.querySelectorAll(targetSelector).forEach(target => {
+                    // classesを空白で分割する
+                    const classes = animationClasses.split(' ');
+                    classes.forEach(className => {
+                        target.classList.add(className);
+                    });
+                });
+                // アニメーションを適用後、監視を解除する
+                observer.unobserve(entry.target);
             }
         });
-    };
-    const observer = new IntersectionObserver(observerCallback);
-    headerContainers.forEach(container => {
-        observer.observe(container);
+    }, {
+        threshold: 0.1 // 要素が10%見えたらトリガー
     });
-}
+
+    document.querySelectorAll(triggerSelector).forEach(trigger => {
+        observer.observe(trigger);
+    });
+};
 
 const photoZoomOnHover = () => {
     const photoElements = document.querySelectorAll('.favorite__image--interactive');
@@ -60,5 +71,9 @@ const photoZoomOnHover = () => {
 }
 
 window.addEventListener("scroll", changeBackgroundColorOnScroll);
-window.addEventListener("DOMContentLoaded", animateTextOnIntersection);
-window.addEventListener("DOMContentLoaded", photoZoomOnHover);
+window.addEventListener("DOMContentLoaded", () => {
+    animateOnIntersection('.section__header-container', '.section-header__text', 'animate__animated animate__fadeInLeft');
+    animateOnIntersection('.favorite__images-container--interactive', '.favorite__image--interactive:nth-child(even)', 'animate__animated animate__fadeInUp');
+    animateOnIntersection('.favorite__images-container--interactive', '.favorite__image--interactive:nth-child(odd)', 'animate__animated animate__fadeInDown');
+    photoZoomOnHover();
+});
