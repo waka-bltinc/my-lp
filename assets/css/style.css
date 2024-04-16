@@ -273,7 +273,7 @@ img {
 .favorite__images-container {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .favorite__image {
@@ -602,10 +602,6 @@ img {
     /* favorite section */
     .favorite__row-container {
         gap: 1rem;
-    }
-
-    .favorite__images-container {
-        gap: 0;
     }
 
     .favorite__image:first-child {
