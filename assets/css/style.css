@@ -62,6 +62,7 @@ section {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 /* general classes */
@@ -426,17 +427,24 @@ img {
 
 #decision {
     margin-top: 15vh;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+#decision .section__header-container {
+    height: 20vh;
+    margin-bottom: 0;
 }
 
 .decision__main {
     width: 100%;
+    height: 80vh;
     margin: auto;
 }
 
 .decision__inrroduction-text-container {
     margin-inline: auto;
     max-width: 60%;
+    max-height: 20%;
 }
 
 .decision__introduction-text {
@@ -449,6 +457,7 @@ img {
 
 .decision__image-container {
     width: 50%;
+    height: 40%;
     margin-inline: auto;
 }
 
@@ -461,6 +470,7 @@ img {
     color: var(--original-white);
     text-align: center;
     padding: 1rem;
+    height: 30%;
 }
 
 .decision__text--md {
@@ -477,6 +487,7 @@ img {
     padding: 0.7rem;
     font-size: 2rem;
     font-weight: 800;
+    height: 10%;
 }
 
 @media screen and (max-width: 1440px) {
