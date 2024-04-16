@@ -286,7 +286,7 @@ img {
     height: 20rem;
     object-fit: cover;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
@@ -606,7 +606,6 @@ img {
 
     .favorite__images-container {
         gap: 0;
-        margin-bottom: 4rem;
     }
 
     .favorite__image:first-child {
