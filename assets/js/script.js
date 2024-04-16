@@ -36,5 +36,29 @@ const animateTextOnIntersection = () => {
     });
 }
 
-document.addEventListener("scroll", changeBackgroundColorOnScroll);
+const photoZoomOnHover = () => {
+    const photoElements = document.querySelectorAll('.favorite__image--interactive');
+
+    photoElements.forEach((photoElement) => {
+        photoElement.addEventListener('mouseover', () => {
+            photoElements.forEach((element) => {
+                if (element !== photoElement) {
+                    element.classList.add('favorite__image--out');
+                }
+            });
+            photoElement.classList.add('favorite__image--zoom');
+        });
+        photoElement.addEventListener('mouseout', () => {
+            photoElements.forEach((element) => {
+                if (element !== photoElement) {
+                    element.classList.remove('favorite__image--out');
+                }
+            });
+            photoElement.classList.remove('favorite__image--zoom');
+        });
+    });
+}
+
+window.addEventListener("scroll", changeBackgroundColorOnScroll);
 window.addEventListener("DOMContentLoaded", animateTextOnIntersection);
+window.addEventListener("DOMContentLoaded", photoZoomOnHover);
