@@ -147,13 +147,14 @@ img {
 }
 
 .header-line__horizontal {
-    height: 4px;
+    height: 2px;
     width: 100%;
     flex-grow: 1 !important;
 }
 
 .header-line__horizontal--white {
     background-color: var(--original-white);
+    opacity: 0.5;
 }
 
 .header-line__horizontal--black {
