@@ -82,4 +82,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // 性格の画像のアニメーション
     animateOnIntersection('.personality__image-container', '.personality__image-container', 'animate__animated animate__zoomIn');
+
+    // プロダクトセクションのアニメーション
+    animateOnIntersection('.products__row-container:first-child', '.products__row-container:first-child', 'animate__animated animate__fadeInLeft');
+    animateOnIntersection('.products__row-container:last-child', '.products__row-container:last-child', 'animate__animated animate__fadeInRight');
+
+    // ターゲットセクションのアニメーション
+    animateOnIntersection('.products__row-container:first-child', '.products__row-container:first-child', 'animate__animated animate__fadeInLeft');
+    animateOnIntersection('.target__text-container', '.target__image-container', 'animate__animated animate__pulse');
 });
