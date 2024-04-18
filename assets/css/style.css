@@ -255,6 +255,7 @@ img {
 
 .section-header__text {
     font-size: 4.5rem;
+    opacity: 0;
 }
 
 /* favorite section */
@@ -279,6 +280,7 @@ img {
 
 .favorite__image {
     width: 50%;
+    opacity: 0;
 }
 
 .favorite__images-container--interactive {
@@ -296,6 +298,7 @@ img {
     text-align: center;
     height: 100%;
     border: 2px var(--original-white) solid;
+    opacity: 0;
 }
 
 .favorite__image--interactive:nth-child(even) {
@@ -350,6 +353,10 @@ img {
     line-height: 1rem;
 }
 
+.personality__image-container {
+    opacity: 0;
+}
+
 .personality__text {
     text-align: center;
 }
@@ -366,6 +373,7 @@ img {
     display: flex;
     align-items: center;
     gap: 3.5rem;
+    opacity: 0;
 }
 
 .products__row-container:last-child {

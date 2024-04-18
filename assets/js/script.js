@@ -59,7 +59,7 @@ const animateOnIntersection = (triggerSelector, targetSelector, animationClasses
             }
         });
     }, {
-        threshold: 0.1 // 要素が10%見えたらトリガー
+        threshold: 0.6 // 要素が10%見えたらトリガー
     });
 
     document.querySelectorAll(triggerSelector).forEach(trigger => {
@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
     animateOnIntersection('.favorite__image', '.favorite__image:last-child', 'animate__animated animate__fadeInRight');
 
     // 性格の画像のアニメーション
-    animateOnIntersection('.personality__image-container', '.personality__image-container', 'animate__animated animate__zoomIn');
+    animateOnIntersection('.personality__image-container', '.personality__image-container', 'animate__animated animate__fadeInUp');
 
     // プロダクトセクションのアニメーション
     animateOnIntersection('.products__row-container:first-child', '.products__row-container:first-child', 'animate__animated animate__fadeInLeft');
