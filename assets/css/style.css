@@ -5,6 +5,11 @@
 
 html {
     font-size: 18px;
+    visibility: hidden;
+}
+
+html.wf-active {
+    visibility: visible;
 }
 
 /* general tags */

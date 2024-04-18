@@ -24,14 +24,6 @@
       content="	https://waka-bltinc.github.io/my-lp/assets/image/OGP-image.png"
     />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/animate.css" />
@@ -45,6 +37,32 @@
     <script src="./assets/js/script.js"></script>
     <link rel="icon" href="./assets/image/favicon.ico" />
     <title>Sho Wakatsuki - My Profile</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ["Inter"] },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      };
+
+      (function () {
+        var wf = document.createElement("script");
+        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
   </head>
   <body>
     <header class="max-w-1440">
