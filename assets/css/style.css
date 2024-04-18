@@ -187,7 +187,7 @@ img {
     vertical-align: bottom;
     transform: translateX(-2rem);
     color: #282828;
-    will-change: contents;
+    will-change: transform;
 }
 
 #main {
